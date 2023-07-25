@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Qiwi</title>
+    <link rel="stylesheet" href='src/assets/css/style.css'></link>
+</head>
+<body>
+<header>
+    <h1>Курс валют</h1>
+</header>
+<main>
+    <label>
+        <select id='select'>
+            <option id='option' disabled selected hidden>Выберите валюту</option>
+        </select>
+    </label>
+    <table>
+        <tr>
+            <td>ID валюты</td>
+            <td id='idRates'></td>
+        </tr>
+        <tr>
+            <td>Название</td>
+            <td id='nameRates'></td>
+        </tr>
+        <tr>
+            <td>Код</td>
+            <td id='CharCodeRates'></td>
+        </tr>
+        <tr>
+            <td>Дата - значение</td>
+            <td id='date'></td>
+        </tr>
+        <tr>
+            <td>предшествующая дата - предшествующее значение</td>
+            <td id='previousDate'></td>
+        </tr>
+    </table>
+    <script src="src/app/apiUtils.js"></script>
+    <script src="src/app/index.js"></script>
+
+</main>
+</body>
+</html>
